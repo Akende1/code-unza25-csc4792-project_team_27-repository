@@ -45,3 +45,38 @@ Provide specific improvement recommendations, including:
 - Establish baseline metrics to track future Wikipedia content improvements.  
 - Produce educational resources to guide editors on quality standards.
 
+## 2. Success Criteria & Metrics
+
+### 2.1 Primary Success Metrics
+**Metric 1: Classification Accuracy**  
+- **Target:** ≥85% accuracy in classifying articles.  
+- **Measurement:** Compare automated classifications against human-rated articles using cross-validation and confusion matrix analysis.
+
+**Metric 2: Gap Identification Accuracy**  
+- **Target:** Correctly flag the top 20 most incomplete Zambian articles.  
+- **Measurement:** Validate with expert review and compare with community consensus.
+
+### 2.2 Secondary Success Metrics
+**Model Performance Metrics**  
+- **Precision:** Minimize false positives (overrating article quality).  
+- **Recall:** Minimize false negatives (underrating article quality).  
+- **F1-Score:** Balanced metric for each quality level.  
+- **Cohen’s Kappa:** Measure agreement between model and human raters.
+
+**Business Impact Metrics**  
+- **Usability:** Wikipedia editors can easily interpret and act on recommendations.  
+- **Efficiency:** Reduced time needed to identify priority improvement opportunities.  
+- **Coverage:** Percentage of Zambian articles assessed by the system.
+
+---
+
+## 3. Validation Methods
+**Expert Review**  
+- Recruit 3–5 experienced Wikipedia editors.  
+- Have them manually assess 50 randomly selected articles.  
+- Compare their assessments with model output to measure agreement.
+
+**Community Feedback**  
+- Share results with WikiProject Zambia members.  
+- Gather qualitative feedback on usefulness, accuracy, and priorities.  
+- Apply feedback to refine the model and recommendations.
