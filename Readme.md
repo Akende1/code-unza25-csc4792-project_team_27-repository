@@ -18,13 +18,21 @@ Solving this problem benefits multiple stakeholders: Wikipedia editors seeking g
 We will build a classification model for:
 
 **Objective 1: Article Classification System**
-Develop a system to automatically classify Zambian Wikipedia articles into established quality levels based on Wikipedia’s quality scale:  
-- **Stub (Level 0):** <500 words, minimal structure, few/no references.  
-- **Start (Level 1):** 500–1500 words, basic structure, some references.  
-- **C-Class (Level 2):** >1500 words, good structure, adequate references.  
-- **B-Class (Level 3):** Comprehensive coverage, good references, proper structure.  
-- **Good Article (Level 4):** Meets Wikipedia’s “good article” criteria—well-written, neutral, fully referenced.  
+Develop a system to automatically classify Zambian Wikipedia articles into established quality levels based on Wikipedia’s quality scale:
+
+- **Stub (Level 0)**: <100 words, ≤2 sections, very few/no internal links.
+
+- **Basic (Level 1)**: 100–249 words, ≥2 sections, minimal structure.
+
+- **Intermediate (Level 2)**: 250–399 words, ≥3 sections, ≥15 internal links, some structure and references.
+
+- **Detailed (Level 3)**: 400–799 words, ≥4 sections, ≥30 internal links, well-structured with good linking.
+
+- **Very Comprehensive (Level 4)**: ≥800 words, ≥5 sections, ≥50 internal links, highly structured, extensive references.
+
 - **Featured Article (Level 5):** Exemplary standard, exceptional writing, comprehensive coverage.
+
+*custom scale used for yhe purposes of this project.*
 
 **Objective 2: Content Gap Identification**  
 Identify missing or underdeveloped elements within articles categorized as:  
@@ -80,3 +88,19 @@ Provide specific improvement recommendations, including:
 - Share results with WikiProject Zambia members.  
 - Gather qualitative feedback on usefulness, accuracy, and priorities.  
 - Apply feedback to refine the model and recommendations.
+
+---
+
+## 4. Data Mining Goals
+
+**Automated Quality Classification**
+
+Build a supervised classification model to automatically assign Zambian Wikipedia articles to one of six quality levels (Stub, Start, C-Class, B-Class, Good Article, Featured Article) based on Wikipedia’s quality scale.
+
+- Content Gap Detection
+
+Use text mining and metadata analysis to identify missing sections, low reference counts, insufficient word count, and lack of multimedia.
+
+- Improvement Recommendation Generation
+
+Develop a rule-based recommendation system that generates actionable suggestions for editors based on detected gaps (e.g., “Add references to support claims,” “Include an infobox,” “Expand the history section”).
